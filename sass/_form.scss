@@ -1,0 +1,73 @@
+.form-wrapper {
+    background: rgba(0,0,0,0.7);
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+
+    @media only screen and (max-width: 1000px) {
+        top: 40%;
+    }
+
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+        left: 5%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        .qs-field {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0;
+            width: 15%;
+
+            @media only screen and (max-width: 1000px) {
+                width: 45%;
+            }
+
+            label {
+                padding-bottom: 1rem;
+                font-size: 1.5rem;
+                font-style: italic;
+                color: #fff;
+            }
+
+            #location {
+                padding-left: 1rem;
+            }
+
+            select, input {
+                height: 4rem;
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                margin-top: 3rem;
+                background-color: $color-primary;
+                color: #fff;
+                font-size: 1.8rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                border: none;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: $color-secondary;
+                }
+            }
+
+            select {
+                padding: 0.5rem;
+                width: 100%;
+                color: $color-grey-dark;
+            }
+        }
+    }
+}

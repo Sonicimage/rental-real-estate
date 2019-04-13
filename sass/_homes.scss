@@ -1,0 +1,26 @@
+.homes {
+    width: 100%;
+    margin: 0 auto;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: row wrap;
+        width: 80%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1400px) {
+            width: 90%;
+        }
+
+        .home {
+            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.1);
+            width: 23%; 
+            
+            @media only screen and (max-width: 900px) {
+                width: 50%;
+            }
+        }
+    }
+}
+

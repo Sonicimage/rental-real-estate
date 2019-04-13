@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rental Real Estate</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="sass/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body class="container">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="row">
+                <figure class="logo-box">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </figure>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Property owners</a></li>
+                        <li><a href="#">For rent</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+                </nav>
+            </div>
+
+            <div class="form-wrapper">
+                <form action="">
+                    <div class="row">
+                        <div class="qs-field">
+                            <label for="location">Area name</label>
+                            <input type="text" id="location" placeholder="e.g: Ilford" name="location">
+                        </div>
+                        <div class="qs-field">
+                            <label for="propertyType">Property type</label>
+                            <select name="propertyType" id="propertyType">
+                                <option value selected="selected">Any</option>
+                                <option value="flat">Flat / Apartment</option>
+                                <option value="house">House</option>
+                                <option value="studio">Studio</option>
+                            </select>
+                        </div>
+                        <div class="qs-field">
+                            <label for="budget">Budget (PCM)</label>
+                            <select name="budget" id="budget">
+                                <option value="300">£300</option>
+                                <option value="400">£400</option>
+                                <option value="500">£500</option>
+                                <option value="600">£600</option>
+                                <option value="700">£700</option>
+                                <option value="800">£800</option>
+                                <option value="900">£900</option>
+                                <option value="1000">£1000</option>
+                                <option value="1100">£1100</option>
+                                <option value="1200">£1200</option>
+                            </select>
+                        </div>
+                        <div class="qs-field">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select name="bedrooms" id="bedrooms">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="qs-field">
+                            <button class="btn">Filter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>           
+        </header>
+
+        <main>
+            <section class="features">
+                <div class="feature-item">
+                    <p class="fontawesome-icon"><i class="fas fa-user"></i></p>
+                    <h4>Create an account</h4>
+                    <p class="feature-text">Create an account, add your preferences and receive an email when new properties are listed.</p>
+                    <p><a href="">Create an account</a></p>
+                </div>
+                <div class="feature-item">
+                    <p class="fontawesome-icon"><i class="fas fa-plug"></i></p>
+                    <h4>Organise utilities</h4>
+                    <p class="feature-text">We’ll help you set up your new
+                    residence with electricity, internet, gas and more.
+                    </p>
+                    <p><a href="">Get connected</a></p>
+                </div>
+                <div class="feature-item">
+                    <p class="fontawesome-icon"><i class="fas fa-home"></i></p>
+                    <h4>Find a roommate</h4>
+                    <p class="feature-text">Need a company? Find a roommate with our new
+                    share accommodation website.
+                    </p>
+                    <p><a href="">Get sharing</a></p>
+                </div>
+                <div class="feature-item">
+                    <p class="fontawesome-icon"><i class="fas fa-paw"></i></p>
+                    <h4>Pet friendly</h4>
+                    <p class="feature-text">Having a pet? Pets are welcomed at selected
+                    locations. Easily filter your search.
+                    </p>
+                    <p><a href="">Filter for pets</a></p>
+                </div>
+            </section>
+
+            <section class="listing">
+                <div class="text-wrapper">
+                    <h3>Are you a landlord? Post your rental for free!</h3>
+                    <!-- <input type="submit" id="submit-btn" value="List Now!"> -->
+                    <button class="btn">List now!</button> 
+                </div>
+            </section>
+
+            <section class="homes">
+                <h2 id="pets">Pet Friendly Rentals</h2>
+                <div class="row">
+                    <div class="home">
+                        <img src="img/pets-1.png" alt="pet friendly 1" class="home-img">
+                        <p class="home-text"><span class="type">3 bedroom terraced house</span></br>
+                        Emma Rd, Plaistow, E13</br>
+                        <span class="price">£1,543 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/pets-2.png" alt="pet friendly 2" class="home-img">
+                        <p class="home-text"><span class="type">2 bedroom flat</span></br>
+                        George St, Upton Park, E1</br>
+                        <span class="price">£1,400 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/pets-3.png" alt="pet friendly 3" class="home-img">
+                        <p class="home-text"><span class="type">3 bedroom semi-dtd house</span></br>
+                        Craigen Gdns, Ilford, IG3</br>
+                        <span class="price">£1,600 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/pets-4.png" alt="pet friendly 4" class="home-img">
+                        <p class="home-text"><span class="type">3 bedroom terraced house</span></br>
+                        Pretoria Rd, London, E11</br>
+                        <span class="price">£2,250 pcm</span></p>
+                    </div>
+                </div>
+                <p class="link"><a href="#">See more</a></p>
+            </section>
+
+            <section class="homes">
+                <h2>Shared Accommodation</h2>
+                <div class="row">
+                    <div class="home">
+                        <img src="img/shared-1.png" alt="shared 1" class="home-img">
+                        <p class="home-text"><span class="type">Flat share</span></br>
+                        St. David's Sq, London, E14</br>
+                        <span class="price">£485 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/shared-2.png" alt="shared 2" class="home-img">
+                        <p class="home-text"><span class="type">Flat share</span></br>
+                        Hitchings St, London, E14</br>
+                        <span class="price">£500 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/shared-3.png" alt="shared 3" class="home-img">
+                        <p class="home-text"><span class="type">House share</span></br>
+                        Melon Rd, Leytonstone, E2</br>
+                        <span class="price">£465 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/shared-4.png" alt="shared 4" class="home-img">
+                        <p class="home-text"><span class="type">House share</span></br>
+                        Sebert Rd, Forest gate, E7</br>
+                        <span class="price">£425 pcm</span></p>
+                    </div>
+                </div>
+                <p class="link"><a href="#">See more</a></p>
+            </section>
+
+            <section class="homes">
+                <h2>Studio Rentals</h2>
+                <div class="row">
+                    <div class="home">
+                        <img src="img/studio-1.png" alt="studio 1" class="home-img">
+                        <p class="home-text"><span class="type">Studio flat</span></br>
+                            Rendlesham Rd, London, E5</br>
+                            <span class="price">£1,000 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/studio-2.png" alt="studio 2" class="home-img">
+                        <p class="home-text"><span class="type">Studio flat</span></br>
+                            Harpley Sq, Stepney, E1</br>
+                            <span class="price">£1,075 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/studio-3.png" alt="studio 3" class="home-img">
+                        <p class="home-text"><span class="type">Studio flat</span></br>
+                        New Crane Pl, London, E1W</br>
+                        <span class="price">£1,235 pcm</span></p>
+                    </div>
+                    <div class="home">
+                        <img src="img/studio-4.png" alt="studio 4" class="home-img">
+                        <p class="home-text"><span class="type">Studio flat</span></br>
+                        High Rd, Leyton, E10</br>
+                        <span class="price">£875 pcm</span></p>
+                    </div>
+                </div>
+                <p class="link"><a href="#">See more</a></p>
+            </section>
+            <div class="section-divider"></div>
+
+            <section class="news">
+                <h2>Latest Property News</h2>
+                <div class="news-items">
+                    <article>
+                        <figure>
+                            <img src="img/news-1.png" alt="news 1">
+                        </figure>
+                        <div class="news-text">
+                            <h4>Living with a partner? Don't make these money mistakes    </h4>                        
+                            <p>Mel ex vidisse iracundia instructior, qui dicam accumsan definitiones ea, prima populo eLorem ipsum dolor sit amet,
+                            lobortis periculis principes id his, eum vide evertiturcu, dicta erroribus efficiendi no eos. Ut eius molestiae vituperatoribus est, ad eum legimus democritum deseruisse. 
+                            Ex aliquam tincidunt voluptatibus duo.
+                            <span><a href="#">Read more...</a></span></p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <figure>
+                            <img src="img/news-2.png" alt="news 2">
+                        </figure>
+                        <div class="news-text">
+                            <h4>Having a pet? Here are 5 questions you must ask the landlord before renting</h4>
+                            <p>Mel ex vidisse iracundia instructior, qui dicam accumsan definitiones ea, prima populo eLorem ipsum dolor sit amet,
+                            lobortis periculis principes id his, eum vide evertiturcu dicta erroribus efficiendi no eos. Ut eius molestiae vituperatoribus est, ad eum legimus democritum deseruisse. 
+                            Ex aliquam tincidunt voluptatibus duo.
+                            <span><a href="#">Read more...</a></span></p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <figure>
+                            <img src="img/news-3.png" alt="news 3">
+                        </figure>
+                        <div class="news-text">
+                            <h4>Renting a home with a pool? Here are 10 tips for geting the best price</h4>
+                            <p>Mel ex vidisse iracundia instructior, qui dicam accumsan definitiones ea, prima populo eLorem ipsum dolor sit amet,
+                            lobortis periculis principes id his, eum vide evertiturcu, dicta erroribus efficiendi no eos. Ut eius molestiae vituperatoribus est, ad eum legimus democritumdeseruisse. 
+                            Ex aliquam tincidunt voluptatibus duo.
+                            <span><a href="#">Read more...</a></span></p>
+                        </div>
+                    </article>
+                </div>
+            </section>               
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <address class="contact">
+                    <h4>Contact us:</h4>
+                    <p>0208-560-2797 <br>info@rre.co.uk</p>
+                </address>
+                <div class="social">
+                    <h4>Find us:</h4>
+                    <div class="social-icons">
+                        <p><a href="#"><i class="fab fa-facebook"></i></a></p>
+                        <p><a href="#"><i class="fab fa-twitter"></i></a></p>
+                        <p><a href="#"><i class="fab fa-instagram"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

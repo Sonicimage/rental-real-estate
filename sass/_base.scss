@@ -1,0 +1,79 @@
+$color-primary: #497dc6;
+$color-secondary: #193a5f;
+
+$color-grey-light: #f9f7f6;
+$color-grey-dark: #333;
+
+$font-primary: 'Raleway', sans-serif;
+$font-display: 'Oswald', sans-serif;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+main {
+    background-color: $color-grey-light; 
+}
+
+img {
+    max-width: 100%;
+}
+
+.listing {
+    background-color: $color-primary;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    .text-wrapper {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 1400px) {
+            width: 55%;
+        }
+
+        @media only screen and (max-width: 1300px) {
+            width: 60%;
+        }
+
+        @media only screen and (max-width: 1300px) {
+            width: 65%;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            width: 80%;
+        }
+    }
+}

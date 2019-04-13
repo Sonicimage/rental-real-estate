@@ -1,0 +1,22 @@
+.news-items {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-column: full-start / full-end;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+
+    figure {
+        margin-bottom: 3rem;
+        
+
+        img {
+            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);       
+            width: 100%;     
+        }
+    }
+
+    span {
+        color: $color-primary;
+    }
+}
