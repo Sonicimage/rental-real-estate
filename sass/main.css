@@ -393,7 +393,7 @@ header .navbar .mobile-nav-icon i {
   padding-left: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .features .feature-item {
     width: 40%;
   }
