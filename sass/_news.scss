@@ -1,22 +1,29 @@
 .news-items {
     width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-column: full-start / full-end;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 2rem;
 
-    figure {
-        margin-bottom: 3rem;
-        
+    @media only screen and (max-width: 1200px) {
+        width: 90%;
+    }
 
-        img {
-            box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);       
-            width: 100%;     
+    .news-item {
+        width: 30%;
+
+        @media only screen and (max-width: 600px) {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 375px) {
+            width: 90%;
         }
     }
 
-    span {
-        color: $color-primary;
+    .news-text {
+        padding: 1rem;
     }
 }

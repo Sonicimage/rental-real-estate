@@ -1,11 +1,10 @@
-.homes {
-    width: 100%;
+.homes {    
     margin: 0 auto;
 
     .row {
         display: flex;
         justify-content: space-between;
-        flex-wrap: row wrap;
+        flex-flow: row wrap;
         width: 80%;
         margin: 0 auto;
 
@@ -13,12 +12,27 @@
             width: 90%;
         }
 
+        @media only screen and (max-width: 900px) {
+            width: 80%;
+        }
+
         .home {
             box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.1);
             width: 23%; 
             
             @media only screen and (max-width: 900px) {
-                width: 50%;
+                width: 45%;
+                margin: 1rem 0;
+            }
+
+            @media only screen and (max-width: 600px) {
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+            }
+
+            @media only screen and (max-width: 375px) {
+                width: 90%;
             }
         }
     }
