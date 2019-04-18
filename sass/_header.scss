@@ -14,8 +14,12 @@ header {
         padding: 2rem 0;
     }
 
-    .logo {
-        height: 7rem;
+    .logo-box {
+        width: 12rem;
+        
+        .logo {
+            width: 100%;
+        }
     }
 
     .navbar {
